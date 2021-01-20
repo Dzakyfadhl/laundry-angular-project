@@ -1,0 +1,51 @@
+<p-card>
+    <div class="p-grid p-jc-md-center p-ai-center p-mt-5">
+        <h1>ADD USER</h1>
+    </div>
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="username">Username</label>
+            <input id="username" type="text" pInputText>
+        </div>
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="password">Password</label>
+            <input id="password" pPassword type="password" />
+        </div>
+
+
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="role">Role</label>
+            <p-dropdown inputId="role" [options]="listRoles" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" type="text" pInputText>
+        </div>
+    </div>
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="phone">Phone</label>
+            <input id="phone" type="text" pInputText>
+        </div>
+
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="address">Address</label>
+            <textarea [rows]="1" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
+        </div>
+
+
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+
+        <div class="p-field p-col-8 p-mt-4">
+            <button pButton label="Submit User" icon="pi pi-plus" class="p-button-primary p-button-sm"></button>
+        </div>
+    </div>
+
+
+</p-card>

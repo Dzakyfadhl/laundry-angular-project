@@ -1,0 +1,36 @@
+<p-card>
+    <div class="p-grid p-jc-md-between p-ai-center">
+        <h1>TRANSACTION LIST</h1>
+        <button pButton label="Add Transaction" icon="pi pi-plus" class="p-button-primary p-button-sm" [routerLink]="['/cashier/modif-transaction']" routerLinkActive="router-link-active" style="height: 40px; margin-right: 30px;"></button>
+    </div>
+
+    <p-table [value]="listTrx">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>No</th>
+                <th>Code</th>
+                <th>Time</th>
+                <th>Customer</th>
+                <th>Employee</th>
+                <th>Payment</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-trx let-rowIndex="rowIndex">
+            <tr>
+                <td>{{rowIndex+1}}</td>
+                <td>{{trx.code}}</td>
+                <td>{{trx.time}}</td>
+                <td>{{trx.customer}}</td>
+                <td>{{trx.empCode}}</td>
+                <td>{{trx.payment}}</td>
+                <td>Rp.{{trx.price}}</td>
+                <td>
+                    <button pButton label="View Detail" icon="pi pi-eye" class="p-button-warning p-button-sm" [routerLink]="['detail']" routerLinkActive="router-link-active"></button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+</p-card>

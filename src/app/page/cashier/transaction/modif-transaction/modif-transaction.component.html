@@ -1,0 +1,49 @@
+<p-card>
+    <div class="p-grid p-jc-md-center p-ai-center p-mb-5">
+        <h1>TRANSACTION</h1>
+    </div>
+
+
+    <div class="p-fluid p-formgrid p-grid  p-jc-md-center">
+        <div class="p-field p-lg-4 p-md-12">
+            <label for="customer">Customer</label>
+            <p-dropdown inputId="customer" [options]="customers" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+        <div class="p-field p-lg-4 p-md-12">
+            <label for="employee">Employee</label>
+            <p-dropdown inputId="employee" [options]="employees" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+        <div class="p-field p-lg-4 p-md-12">
+            <label for="payment">Payment</label>
+            <p-dropdown inputId="payment" [options]="payments" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+    </div>
+
+    <hr>
+    <div class="p-grid p-jc-md-center p-ai-center p-mt-5">
+        <h1>DETAIL TRANSACTION</h1>
+    </div>
+    <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-lg-6 p-sm-12">
+            <label for="desciription">Description</label>
+            <input id="desciription" type="text" pInputText>
+        </div>
+        <div class="p-field p-lg-6 p-sm-12">
+            <label>Unit</label>
+            <p-inputNumber suffix=" Kg" [minFractionDigits]="2" [maxFractionDigits]="2"></p-inputNumber>
+        </div>
+        <div class="p-field p-lg-6 p-sm-12">
+            <label for="state">Perfume</label>
+            <p-dropdown inputId="state" [options]="perfumes" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+        <div class="p-field p-lg-6 p-sm-12">
+            <label for="state">Laundry Service</label>
+            <p-dropdown inputId="state" [options]="services" placeholder="Select" optionLabel="code"></p-dropdown>
+        </div>
+        <div class="p-field p-col p-mt-4">
+            <button pButton label="Save All" icon="pi pi-plus" class="p-button-primary p-button-sm"></button>
+        </div>
+    </div>
+
+
+</p-card>

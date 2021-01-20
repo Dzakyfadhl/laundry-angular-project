@@ -1,0 +1,41 @@
+<p-card>
+    <div class="p-grid p-jc-md-center p-ai-center p-mt-5">
+        <h1>ADD LAUNDRY SERVICE</h1>
+    </div>
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="servceCode">Service Code</label>
+            <input id="serveCode" type="text" pInputText>
+        </div>
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="serveName">Service Name</label>
+            <input id="serveName" type="text" pInputText>
+        </div>
+
+
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="price">Price (Rp)</label>
+            <!-- <p-inputNumber mode="currency" currency="USD" locale="id-ID"></p-inputNumber> -->
+            <!-- <p-inputNumber mode="currency" currency="Rp" locale="id-ID"></p-inputNumber> -->
+            <p-inputNumber suffix=",00" locale="id-ID"></p-inputNumber>
+
+        </div>
+        <div class="p-field p-lg-5 p-sm-12">
+            <label for="fullname">Day Duration</label>
+            <p-inputNumber id="fullname" suffix=" day"></p-inputNumber>
+
+        </div>
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid p-jc-md-center">
+
+        <div class="p-field p-col-8 p-mt-4">
+            <button pButton label="Submit Service" icon="pi pi-plus" class="p-button-primary p-button-sm"></button>
+        </div>
+    </div>
+
+
+</p-card>
